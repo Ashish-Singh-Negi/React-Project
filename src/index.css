@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   box-sizing: border-box;
+}
+
+
+.header{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* overflow-y:scroll; */
+  
+
+}
+
+.card {
+  height: auto;
+  width: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 0px 1px white;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect on the card */
+.card:hover {
+  transform: translateY(-10px); /* Slight upward movement */
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2); /* Glow-like shadow */
+  background-color: #1c1c1c; /* Slightly lighter background */
+}
+
+.card .card-title {
+  height: 40px;
+  width: 280px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect for title section */
+.card-title:hover {
+  background-color: #333; /* Slightly lighter background for the title */
+}
+
+.card-title .header-title {
+  margin: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  padding-left: 5px;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Hover effect for the header title */
+.card-title .header-title:hover {
+  color: #00ffcc; /* Highlight text color on hover */
+}
+
+.card-title .header-image {
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+/* Hover effect for the header image */
+.card-title .header-image:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+.image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.card-description {
+  text-align: justify;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for description */
+}
+
+/* Hover effect for description */
+.card-description:hover {
+  background-color: #222; /* Slightly lighter background for description */
+  color: #e0e0e0; /* Slightly lighter text color */
+}
+
+
+
+/* .card{
+  height:auto;
+  width: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px; 
+ align-items: center;
+ box-shadow: 0px 0px 0px 1px white;
+ padding-bottom: 10px;
+}
+.card .card-title{
+  height: 40px;
+  width: 280px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  align-items: center;
+  border-radius: 10px;
+  
+  
+}
+.card-title .header-title{
+ 
+margin: 5px;
+font-size: 24px;
+font-weight: 700;
+color: white;
+padding-left: 5px;
+
+
+}
+
+.card-title .header-image{
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+}
+.image{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+}
+
+.card-description{
+  text-align: justify;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16;
+ } */
+
+.Services-container h1{
+ color: white;
+}
+
+
+.Buttons{
+  height:32px;
+  /* width: 80px; */
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color:black;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid white;
+  padding-right: 10px;
+}
+.Buttons:hover{
+  background-color: green; 
+  border: none;
+}
+.services-display{
+  height: 100%;
+  width: 80vw;
+  background-color: black;
+  color:white;
+  padding: 15px;
+  margin: 15px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  border: 1px solid white;
+  align-items: center;
+  border-radius: 10px;
+
+
+}
+.main-container{
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+
+ 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+
+.service-data{
+ width:36vw;
+ height:100%;
+ background-color:black;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ 
+ gap: 10px;
+ border-radius: 10px;
+ border:1px solid white;
+}
+.service-image{
+  width: 36vw;
+  height: auto;
+  background-color:transparent;
+  border-radius: 10px;
+  
+}
+.service-title{
+  font-size: 20px;
+  padding:5px;
+  background-color:black;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+.service-duration{
+  font-size: 20px;
+  padding:5px;
+  background-color:black;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+.service-description{
+  font-size: 16px;
+  padding:5px;
+  background-color: black;
+  font-weight: 300;
+  text-align: justify;
+  padding-left: 15px;
+  border-radius: 10px;
+  padding-right: 15px;
+
+}
+
+
